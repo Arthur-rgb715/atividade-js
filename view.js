@@ -32,7 +32,7 @@ export function homePage(){
 }
 export function alunosPage(){
     const linhasAlunos = alunos.map((p) => `<tr>
-        <td>${p.alunos}</td>
+        <td>${p.nome}</td>
     </tr>`).join('')
     return layout("Alunos", `
         <h1>Nome dos alunos: </h1>
@@ -43,7 +43,7 @@ export function alunosPage(){
 }
 export function cursosPage(){
     const linhasCursos = cursos.map((p) => `<tr>
-        <td>${p.cursos}</td>
+        <td>${p.curso}</td>
     </tr>`).join('')
     return layout("Cursos", `
         <h1>Nome dos cursos: </h1>
